@@ -14,7 +14,7 @@ const GlobalStyles = createGlobalStyle`
 
     body {
         min-height: 100vh;   
-        background-color: var(--clr-bg); 
+        background-color: var(--clr-bg);
     }
 `;
 
