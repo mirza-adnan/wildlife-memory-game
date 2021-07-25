@@ -13,14 +13,14 @@ function Header() {
 }
 
 const HeaderContainer = styled.header`
-	font-size: clamp(0.9rem, 2vw, 1.5rem);
+	font-size: clamp(0.9rem, 2.3vw, 1.5rem);
 	font-family: 'Permanent Marker', sans-serif;
 	color: var(--clr-text);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding: 1.5em 0;
+	padding: 1.3em 0;
 `;
 
 export default Header;
