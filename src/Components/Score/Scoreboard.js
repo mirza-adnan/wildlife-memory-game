@@ -38,7 +38,7 @@ const Score = styled.div`
 	border-radius: 50px;
 	text-align: center;
 	box-shadow: 0px 15px 30px rgb(0 0 0 / 15%);
-	background-color: #fffdf3;
+	background-color: var(--clr-bg);
 
 	& span {
 		color: var(--clr-text);
