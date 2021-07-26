@@ -4,6 +4,8 @@ const GlobalStyles = createGlobalStyle`
     :root {
         --clr-bg: #FFFDF3;
         --clr-text: #F8533A;
+        --clr-dark: #5d5d5a;
+        --clr-grid: #ccffcc;
     }
 
     * {
