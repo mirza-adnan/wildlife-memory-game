@@ -15,7 +15,7 @@ const CardsContainer = styled.div`
 	margin: 2rem auto;
 	padding: 2rem;
 	border-radius: 10px;
-	background-color: #ccffcc;
+	background-color: var(--clr-grid);
 	box-shadow: 0 4px 15px 0px rgb(0 0 0 / 20%);
 
 	@media (max-width: 700px) {
