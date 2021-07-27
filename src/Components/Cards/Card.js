@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 
-function Card() {
+function Card({ name, image, handleClick, id }) {
 	return (
-		<CardItem>
-			<img src='' alt='' />
+		<CardItem onClick={() => handleClick(id)}>
+			<img src={image} alt={name} />
 		</CardItem>
 	);
 }

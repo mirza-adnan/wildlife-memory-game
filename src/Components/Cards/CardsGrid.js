@@ -1,8 +1,23 @@
 import React from 'react';
 import styled from 'styled-components';
+import Card from './Card';
 
-function CardsGrid() {
-	return <CardsContainer></CardsContainer>;
+function CardsGrid({ animals, handleClick }) {
+	return (
+		<CardsContainer>
+			{animals.map((animal) => {
+				return (
+					<Card
+						name={animal.name}
+						image={animal.image}
+						handleClick={handleClick}
+						key={animal.id}
+						id={animal.id}
+					/>
+				);
+			})}
+		</CardsContainer>
+	);
 }
 
 const CardsContainer = styled.div`

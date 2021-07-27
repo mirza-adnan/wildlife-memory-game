@@ -1,14 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 
-function Scoreboard() {
+function Scoreboard({ best, current }) {
 	return (
 		<ScoreContainer>
 			<BestScore>
-				Best Score: <span>0</span>
+				Best Score: <span>{best}</span>
 			</BestScore>
 			<CurrentScore>
-				Current Score: <span>0</span>
+				Current Score: <span>{current}</span>
 			</CurrentScore>
 		</ScoreContainer>
 	);
