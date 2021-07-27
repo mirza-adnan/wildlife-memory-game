@@ -1,10 +1,13 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useEffect } from 'react';
 import Scoreboard from './Score/Scoreboard';
 import CardsGrid from './Cards/CardsGrid';
+import Popup from './Popup/Popup';
 import animalsArray from '../Utility/animals';
 import uniqid from 'uniqid';
 
 function Main() {
+	// initialArray contains the animal objects with all the default values and serves to reset the game
 	// mapping over the animals array and returning the object with a unique id and clicked property of false
 	const initialArray = animalsArray.map((animal) => {
 		return { ...animal, id: uniqid(), clicked: false };
@@ -13,7 +16,10 @@ function Main() {
 	const [animals, setAnimals] = useState([]);
 	const [bestScore, setBestScore] = useState(0);
 	const [currentScore, setCurrentScore] = useState(0);
+	const [lost, setLost] = useState(false);
+	const [won, setWon] = useState(false);
 
+	// this function returns a randomized version of the array that was passed to it
 	const randomizeArray = (arr) => {
 		const inputArray = [...arr];
 		const randArray = [];
@@ -24,11 +30,6 @@ function Main() {
 			inputArray.splice(randIndex, 1);
 		}
 		return randArray;
-	};
-
-	const resetGame = () => {
-		setCurrentScore(0);
-		setAnimals(randomizeArray(initialArray));
 	};
 
 	const playRound = () => {
@@ -42,21 +43,32 @@ function Main() {
 		});
 
 		if (animal.clicked) {
-			resetGame();
+			setLost(true);
 		} else {
 			playRound();
 			animal.clicked = true;
 		}
 	};
 
+	const resetGame = () => {
+		setCurrentScore(0);
+		setWon(false);
+		setLost(false);
+		setAnimals(randomizeArray(initialArray));
+	};
+
+	// setting the animals array to a randomized array containing the default animal objects when the component mounts
 	useEffect(() => {
 		setAnimals(randomizeArray(initialArray));
-		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 
+	//
 	useEffect(() => {
 		if (currentScore > bestScore) {
 			setBestScore(currentScore);
+		}
+		if (currentScore === 12) {
+			setWon(true);
 		}
 	}, [currentScore]);
 
@@ -64,6 +76,7 @@ function Main() {
 		<main>
 			<Scoreboard best={bestScore} current={currentScore} />
 			<CardsGrid animals={animals} handleClick={handleCardClick} />
+			{lost || won ? <Popup reset={resetGame} won={won} /> : null}
 		</main>
 	);
 }
