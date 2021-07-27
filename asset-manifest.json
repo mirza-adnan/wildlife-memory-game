@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.js": "/wildlife-memory-game/static/js/main.98d5791b.chunk.js",
+    "main.js.map": "/wildlife-memory-game/static/js/main.98d5791b.chunk.js.map",
+    "runtime-main.js": "/wildlife-memory-game/static/js/runtime-main.bee2aa97.js",
+    "runtime-main.js.map": "/wildlife-memory-game/static/js/runtime-main.bee2aa97.js.map",
+    "static/js/2.52cf9f7c.chunk.js": "/wildlife-memory-game/static/js/2.52cf9f7c.chunk.js",
+    "static/js/2.52cf9f7c.chunk.js.map": "/wildlife-memory-game/static/js/2.52cf9f7c.chunk.js.map",
+    "index.html": "/wildlife-memory-game/index.html",
+    "static/js/2.52cf9f7c.chunk.js.LICENSE.txt": "/wildlife-memory-game/static/js/2.52cf9f7c.chunk.js.LICENSE.txt",
+    "static/media/lion.f22478f2.png": "/wildlife-memory-game/static/media/lion.f22478f2.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bee2aa97.js",
+    "static/js/2.52cf9f7c.chunk.js",
+    "static/js/main.98d5791b.chunk.js"
+  ]
+}
