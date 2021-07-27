@@ -14,7 +14,6 @@ function Header() {
 
 const HeaderContainer = styled.header`
 	font-size: clamp(0.9rem, 2.3vw, 1.3rem);
-	font-family: 'Permanent Marker', sans-serif;
 	color: var(--clr-text);
 	display: flex;
 	flex-direction: column;

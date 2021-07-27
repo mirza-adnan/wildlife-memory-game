@@ -20,7 +20,6 @@ const ScoreContainer = styled.div`
 	align-items: center;
 	gap: 3rem;
 	font-size: clamp(1rem, 2vw, 1.3rem);
-	font-family: 'Permanent Marker', sans-serif;
 	padding: 1rem;
 
 	@media (max-width: 600px) {

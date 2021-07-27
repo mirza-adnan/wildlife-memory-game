@@ -14,9 +14,14 @@ const GlobalStyles = createGlobalStyle`
         box-sizing: border-box;
     }
 
+    html {
+        height: 100%;
+    }
+
     body {
-        min-height: 100vh;   
+        height: 100%;   
         background-color: var(--clr-bg);
+        font-family: 'Permanent Marker', sans-serif;
     }
 `;
 
