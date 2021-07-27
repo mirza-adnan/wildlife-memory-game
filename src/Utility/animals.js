@@ -12,18 +12,18 @@ import turtle from '../Images/turtle.png';
 import whale from '../Images/whale.png';
 
 const animalsArray = [
-	{ name: 'Bee', image: bee },
-	{ name: 'Bird', image: bird },
-	{ name: 'Cat', image: cat },
-	{ name: 'Dog', image: dog },
-	{ name: 'Elephant', image: elephant },
-	{ name: 'Koala', image: koala },
-	{ name: 'Lion', image: lion },
-	{ name: 'Monkey', image: monkey },
-	{ name: 'Octopus', image: octopus },
-	{ name: 'Penguin', image: penguin },
-	{ name: 'Turtle', image: turtle },
-	{ name: 'Whale', image: whale },
+    { name: 'Bee', image: bee },
+    { name: 'Bird', image: bird },
+    { name: 'Cat', image: cat },
+    { name: 'Dog', image: dog },
+    { name: 'Elephant', image: elephant },
+    { name: 'Koala', image: koala },
+    { name: 'Lion', image: lion },
+    { name: 'Monkey', image: monkey },
+    { name: 'Octopus', image: octopus },
+    { name: 'Penguin', image: penguin },
+    { name: 'Turtle', image: turtle },
+    { name: 'Whale', image: whale },
 ];
 
 export default animalsArray;

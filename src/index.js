@@ -4,9 +4,9 @@ import App from './App';
 import GlobalStyles from './Styles/GlobalStyles.style';
 
 ReactDOM.render(
-	<React.StrictMode>
-		<GlobalStyles />
-		<App />
-	</React.StrictMode>,
-	document.getElementById('root')
+    <React.StrictMode>
+        <GlobalStyles />
+        <App />
+    </React.StrictMode>,
+    document.getElementById('root')
 );
